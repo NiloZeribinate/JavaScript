@@ -19,7 +19,7 @@ aside {
 }
 
 #menu-area {
-    width:200px;
+    width:0;
     height:100vh;
     background:#ccc;
     overflow-x:hidden;
