@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Exercicio 06</title>
 </head>
 <body>
-    <img src="imagem/cachorro.jpg" class=".imagem" alt="Animal"> <br>
-    <input type="button" value="Cachorro"> <input type="button" value="Gato"> <input type="button" value="Qual animal é esse?">
+    <img src="Imagens/cachorro.jpg" class="imagem" alt="Animal"> <br>
+    
+    <input type="button" onclick="trocarImg('cachorro.jpg', 'cachorro')" value="Cachorro">
+    <input type="button" onclick="trocarImg('gato.jpg', 'gato')" value="Gato">
+
+    <input type="button" onclick="pegarAnimal()" value="Qual animal é esse?">
+
+    <script src="script.js"></script>
 </body>
 </html>
