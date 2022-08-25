@@ -17,7 +17,7 @@
     border-radius: 20px;
     z-index: 999;
     cursor: pointer;
-    transition: all ease 1.5s;
+    transition: opacity ease 1s;
     opacity: 0;
 }
 

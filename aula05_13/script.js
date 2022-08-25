@@ -7,9 +7,11 @@ function subirPara(altura){
 }
 
 window.onscroll = function(){
-    if(window.scrollY != 0){
-        document.getElementById('scrollbutton').style.opacity = '1'
-    }else{
-        document.getElementById('scrollbutton').style.opacity = '0'
+    let scrollbutton = document.getElementById('scrollbutton')
+
+    if(window.scrollY != 0){ // Aparecer botão
+        scrollbutton.style.opacity = '1'
+    }else{ // Sumir botão
+        scrollbutton.style.opacity = '0'
     }
 }
