@@ -3,7 +3,7 @@ function LoadPosts(){
         .then(function(resultado){
             return resultado.json
         }).then(function(posts){
-            document.getElementById('posts').innerText = posts
+            document.getElementById('posts').innerText = posts.length + ' posts'
         })
         .catch(function(erro){
             console.log('ERRO!')
