@@ -7,6 +7,7 @@ function LoadPosts() {
         })
             .then(function(posts){
                 document.getElementById('posts').innerHTML = posts.length + ' posts'
+                console.log(posts)
             })
         .catch(function(error){
             console.log('ERRO!')
