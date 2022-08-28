@@ -13,3 +13,15 @@ function LoadPosts() {
             console.log('ERRO!')
         })
 }
+
+function ExibirPosts(listaDePosts){
+    let html = ''
+
+    for(i in listaDePosts){
+        html += '<h3>'+listaDePosts[i].title+'</h3>'
+        html += '<p>'+listaDePosts[i].body+'</p> <br>'
+        html += '<hr>'
+    }
+
+    document.getElementById("posts").innerHTML = html
+}
