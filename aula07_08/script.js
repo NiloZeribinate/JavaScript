@@ -6,8 +6,7 @@ function LoadPosts() {
             return resultado.json()
         })
             .then(function(posts){
-                document.getElementById('posts').innerHTML = posts.length + ' posts'
-                console.log(posts)
+                ExibirPosts(posts)
             })
         .catch(function(error){
             console.log('ERRO!')
