@@ -1,4 +1,4 @@
-function LoadPosts() {
+/*function LoadPosts() {
     document.getElementById("posts").innerHTML = 'Carregando...';
     
     fetch('https://jsonplaceholder.typicode.com/posts')
@@ -11,6 +11,14 @@ function LoadPosts() {
         .catch(function(error){
             console.log('ERRO!')
         })
+}*/
+
+async function LoadPosts(){
+    document.getElementById("posts").innerHTML = 'Carregando...';
+    
+    let fet = await fetch('https://jsonplaceholder.typicode.com/posts')
+    let json = await fet.json()
+    ExibirPosts(json)
 }
 
 function ExibirPosts(listaDePosts){
