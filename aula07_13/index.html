@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="file" name="arquivos" id="arquivos">
-    
-    <button onclick="enviar()">Enviar</button>
+    <input type="file" accept="image/*" id="inpImagem">
+    <button id="mostrar" name="mostrar" onclick="Mostrar()">Mostrar</button>
+    <button id="limpar" name="limpar" onclick="document.getElementById('img').innerHTML = ''">Limpar</button>
+
+    <div id="img"></div>
 
     <script src="script.js"></script>
-    
 </body>
 </html>
